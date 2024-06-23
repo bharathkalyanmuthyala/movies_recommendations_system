@@ -4,10 +4,54 @@
 ## Introduction
 >> The Movie Recommendation System is designed to provide movie recommendations based on various features extracted from the movie and credit datasets. It aims to help users discover movies that match their preferences by analyzing movie characteristics and relationships.
 ## Data Sets
-The datasets used in this project are:
-+ **Movies.csv:** Contains information about movies such as movie ID, title, overview, genres, keywords, etc.
-+ **Credits.csv:** Contains information about movie credits, including cast and crew details.
+### Movies Dataset (Movies.csv):
+The Movies.csv file contains information about various movies. The columns in this dataset include:
++ **movie_id:** Unique identifier for each movie.
++ **title:** Title of the movie.
++ **overview:** Brief summary of the movie plot.
++ **genres:** List of genres associated with the movie.
++ **keywords:** Keywords related to the movie's content.
++ **cast:** List of main actors in the movie.
++ **crew:** List of crew members involved in the movie production, including the director.
 
+### Credits Dataset (Credits.csv)
+The Credits.csv file contains detailed information about the cast and crew of the movies. The columns in this dataset include:
+
++ **cast:** List of actors and their roles in the movie.
++ **crew:**  List of crew members and their roles in the movie production.
++ **title:** Title of the movie.
+> These datasets are merged on the title column to create a comprehensive dataset for the recommendation system.
+
+
+## Steps
+1.**Data Loading:**
+
++ Load Movies.csv and Credits.csv.
++ Merge the datasets on the title column.
++ Data Cleaning:
+
+2.**Remove null values.**
++ Select relevant columns.
+3.**Feature Extraction:**
+
++ Convert stringified lists into actual lists for genres and keywords.
++ Extract genre names and keywords.
+4.**Text Preprocessing:**
+
++Combine selected features into a single tags column.
++ Stem the words in the tags column to their root form.
+5.**Vectorization:**
+
++ Convert text data into vectors using CountVectorizer.
+6.**Similarity Calculation:**
+
++ Compute cosine similarity between movie vectors.
+7.**Recommendation Function:**
+
++ Define a function recommend(movie) to recommend movies based on cosine similarity.
+8.**Serialization:**
+
++ Serialize the processed data and similarity matrix using pickle.
 
 ## Installation
 
@@ -17,7 +61,10 @@ The datasets used in this project are:
 + Jupiter Notebook / Vs code
 + Numpy
 + Pandas
-
++ ast
++ scikit-learn
++ nltk
+  
 #### You can install the required packages using the following command:
 ```bash
 pip install pandas numpy 
