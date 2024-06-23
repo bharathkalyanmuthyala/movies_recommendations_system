@@ -41,15 +41,17 @@ The Credits.csv file contains detailed information about the cast and crew of th
   
 4.**Text Preprocessing:**
 
-+Combine selected features into a single tags column.
++ Combine selected features into a single tags column.
 + Stem the words in the tags column to their root form.
   
 5.**Vectorization:**
 
++ Uses CountVectorizer from scikit-learn to convert text data into vectors of word counts, limited to the top 5000 words.
 + Convert text data into vectors using CountVectorizer.
   
 6.**Similarity Calculation:**
 
++ Computes cosine similarity between the vectors to determine how similar each movie is to every other movie
 + Compute cosine similarity between movie vectors.
   
 7.**Recommendation Function:**
@@ -71,6 +73,18 @@ The Credits.csv file contains detailed information about the cast and crew of th
 + ast
 + scikit-learn
 + nltk
+
+
+### Install Dependencies:
+
+``` bash
+import pandas as pd
+import numpy as np
+import ast
+from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.metrics.pairwise import cosine_similarity
+import pickle
+```
   
 #### You can install the required packages using the following command:
 ```bash
