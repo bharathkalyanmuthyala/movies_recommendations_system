@@ -1,8 +1,11 @@
 
-
+<img src="https://miro.medium.com/v2/resize:fit:1200/0*x0ccl7G6JeCCSG07.jpg",alt="NOT AVAILABLE"
 
 ## Introduction
 >> The Movie Recommendation System is designed to provide movie recommendations based on various features extracted from the movie and credit datasets. It aims to help users discover movies that match their preferences by analyzing movie characteristics and relationships.
+
+
+
 ## Data Sets
 ### Movies Dataset (Movies.csv):
 The Movies.csv file contains information about various movies. The columns in this dataset include:
@@ -86,11 +89,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 import pickle
 ```
   
-#### You can install the required packages using the following command:
-```bash
-pip install pandas numpy 
 
-```
     
 ## Usage
 
