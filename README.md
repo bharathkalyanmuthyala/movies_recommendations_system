@@ -31,24 +31,31 @@ The Credits.csv file contains detailed information about the cast and crew of th
 + Data Cleaning:
 
 2.**Remove null values.**
+
 + Select relevant columns.
+  
 3.**Feature Extraction:**
 
 + Convert stringified lists into actual lists for genres and keywords.
 + Extract genre names and keywords.
+  
 4.**Text Preprocessing:**
 
 +Combine selected features into a single tags column.
 + Stem the words in the tags column to their root form.
+  
 5.**Vectorization:**
 
 + Convert text data into vectors using CountVectorizer.
+  
 6.**Similarity Calculation:**
 
 + Compute cosine similarity between movie vectors.
+  
 7.**Recommendation Function:**
 
 + Define a function recommend(movie) to recommend movies based on cosine similarity.
+  
 8.**Serialization:**
 
 + Serialize the processed data and similarity matrix using pickle.
