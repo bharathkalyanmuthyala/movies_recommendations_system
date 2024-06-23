@@ -56,6 +56,9 @@ The Credits.csv file contains detailed information about the cast and crew of th
 
 + Computes cosine similarity between the vectors to determine how similar each movie is to every other movie
 + Compute cosine similarity between movie vectors.
+
+### NOTE:
+>> *Similarity.pkl file size is more than 100 mb which git doesn't allows to push into it please make sure that you run the file carefully so that your own similarity.pkl file will generate.*
   
 7.**Recommendation Function:**
 
