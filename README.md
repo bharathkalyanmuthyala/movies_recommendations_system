@@ -1,5 +1,5 @@
 
-![Minion](https://octodex.github.com/images/minion.png))
+![Minion](https://github.com/bharathkalyanmuthyala/movies_recommendations_system/blob/master/movie.jpg)
 
 ## Introduction
 >> The Movie Recommendation System is designed to provide movie recommendations based on various features extracted from the movie and credit datasets. It aims to help users discover movies that match their preferences by analyzing movie characteristics and relationships.
