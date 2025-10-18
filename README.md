@@ -8,7 +8,7 @@
 
 ## Data Sets
 ### Movies Dataset (Movies.csv):
-The Movies.csv file contains information about various movies. The columns in this dataset include:
+The Movies.csv file contains information about various movies. The columns in this dataset includes:
 + **movie_id:** Unique identifier for each movie.
 + **title:** Title of the movie.
 + **overview:** Brief summary of the movie plot.
